@@ -1,0 +1,53 @@
+@import "../app/main/styles/main";
+@import "../app/header/styles/header";
+@import "../app/footer/styles/footer";
+
+/* app css stylesheet */
+
+
+
+body{
+  font-family: "Open Sans",arial,sans-serif;
+}
+
+
+.spinner {
+  position: fixed;
+  left: 49%;
+  top: 49%;
+  z-index: 9999;
+}
+
+
+.alertContainer {
+  position: fixed;
+  top: 50px;
+  font-size: 1em;
+  text-transform: uppercase;
+  left: 50%;
+  z-index: 9999;
+
+
+}
+.alert {
+  text-align: center;
+  width: 300px;
+  margin-left: -50%;
+  opacity: 0.9;
+  z-index: 9999;
+}
+
+.alert.ng-enter {
+  transition: 1s;
+  opacity: 0; }
+
+.alert.ng-enter.ng-enter-active {
+  transition: 1s;
+  opacity: 0.9; }
+
+.alert.ng-leave {
+  opacity: 0.9;
+  transition: 3s; }
+
+.alert.ng-leave.ng-leave-active {
+  opacity: 0; }

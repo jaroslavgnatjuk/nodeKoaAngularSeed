@@ -1,0 +1,3 @@
+(function(){angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("header/views/header.html","<div class=\"header-container\" ng-controller=\"headerCtrl as header\">\n        <a href=\"#/\" class=\"logo noselect\">\n            <h2>\n                angular seed\n            </h2>\n        </a>\n</div>");
+$templateCache.put("footer/views/footer.html","<div class=\"footer-container\" ng-controller=\"footerCtrl as footer\">\n</div>");
+$templateCache.put("main/views/main.html","<div class=\"main-container\"></div>\n");}]);})();

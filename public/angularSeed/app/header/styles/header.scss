@@ -1,0 +1,22 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .logo {
+    display: block;
+    //background-image: url('img/database-icon.png');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: left 10px;
+    padding-left: 55px;
+    h2 {
+      //font-size: 2em;
+    }
+
+    &:hover, &:visited, &:active, &:link {
+      text-decoration: none;
+    }
+  }
+}

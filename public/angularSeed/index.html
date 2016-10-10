@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менеджер проверок БД</title>
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/select2.min.css">
+    <link href="allStyles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div ng-include="'header/views/header.html'"></div>
+<div class="container">
+    <ng-view></ng-view>
+</div>
+<div ng-include="'footer/views/footer.html'"></div>
+
+<div ng-controller="bodyCtrl as body">
+    <div class="alertContainer">
+        <uib-alert class="alert" ng-repeat="alert in body.alerts" type="{{alert.type}}" close="body.closeAlert($index)" dismiss-on-timeout="5000">
+            <span ng-bind="alert.msg"></span>
+        </uib-alert>
+    </div>
+</div>
+
+<span class="spinner" us-spinner="{lines:9, length:1,width:10,radius:15,scale:1.00,corners:1.0,opacity:0.08,rotate:0,direction:1,speed:0.8,trail:69}" spinner-key="spinner-1"></span>
+
+<script src="libs/libs.combined.min.js"></script>
+<script src="templates.js"></script>
+<script src="app.combined.min.js"></script>
+
+</body>
+</html>

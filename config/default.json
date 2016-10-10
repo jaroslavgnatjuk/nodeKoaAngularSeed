@@ -1,0 +1,20 @@
+{
+  "mongo": {
+	  "mongoUrl": "mongodb://10.1.207.70/stage"
+  },
+  "server": {
+	  "host": "http://localhost",
+	  "port": 3002
+  },
+  "auth": {
+	  "authProtocol": "https://",
+	  "authServer": "auth.privatbank.ua",
+	  "pathAuth": "/ProminShell/oauth/authorize",
+	  "pathToken": "/ProminShell/oauth/token",
+	  "pathLdap": "/ProminShell/user/get?format=json",
+	  "clientId": "nrm_intranet"
+  },
+  "rims": {
+	  "login": "rglmgr"
+  }
+}

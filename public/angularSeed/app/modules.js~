@@ -1,0 +1,9 @@
+(function (angular) {
+    angular
+        .module('app', [
+            'templates',
+            'ngRoute',
+            'angularSpinner'
+        ]);
+})(angular);
+

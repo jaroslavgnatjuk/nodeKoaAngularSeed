@@ -1,0 +1,9 @@
+{
+  "auth": {
+    "secret": "NODE_VAR_AUTH_SECRET",
+    "clientPassword": "NODE_VAR_AUTH_CLIENTPASS"
+  },
+  "rims": {
+    "password": "NODE_VAR_RIMS_PASS"
+  }
+}
